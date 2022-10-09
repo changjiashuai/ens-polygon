@@ -1,6 +1,6 @@
-# Sample Hardhat Project
+# ENS Project
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a script that deploys that contract.
+Build your own domain service on a Polygon L2.
 
 Try running some of the following tasks:
 
@@ -10,4 +10,19 @@ npx hardhat test
 REPORT_GAS=true npx hardhat test
 npx hardhat node
 npx hardhat run scripts/deploy.js
+```
+
+### Run test case
+```shell
+npx hardhat run scripts/run.js
+```
+
+### Deploy contract
+```shell
+npx hardhat run scripts/deploy.js --network mumbai
+```
+
+### Open source
+```shell
+npx hardhat verify {contract_address} --network mumbai
 ```
