@@ -54,7 +54,7 @@ contract Domains is ERC721URIStorage {
 
     function getAllNames() public view returns (string[] memory) {
         console.log("Getting all names from contract");
-        string[] memory allNames = new string[](_tokenIds.currents());
+        string[] memory allNames = new string[](_tokenIds.current());
         for(uint i=0; i<_tokenIds.current(); i++){
             allNames[i] = names[i];
             console.log("Name for token %d is %s", i, allNames[i]);
